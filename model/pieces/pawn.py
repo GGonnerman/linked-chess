@@ -31,7 +31,7 @@ class Pawn(ChessPiece):
 			row += change[0]
 			column += change[1]
 			selected_piece = gameboard.get_piece(row, column)
-			if selected_piece != None and selected_piece.color == self.color:
+			if selected_piece != None and selected_piece.color != self.color:
 				potential_moves.append([row, column])
 
 		return potential_moves
