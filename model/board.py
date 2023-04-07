@@ -212,9 +212,8 @@ class Board():
     def setup(self, FEN=None):
         if FEN == None:
             for column in range(8):
-                pass
-                #self.piece_list[1][column] = Pawn(Color.BLACK, 1, column)
-                #self.piece_list[6][column] = Pawn(Color.WHITE, 6, column)
+                self.piece_list[1][column] = Pawn(Color.BLACK, 1, column)
+                self.piece_list[6][column] = Pawn(Color.WHITE, 6, column)
 
             for column in [0, 7]:
                 self.piece_list[0][column] = Rook(Color.BLACK, 0, column)
